@@ -1,0 +1,77 @@
+modifications I did to prepare the base of the template (so that the navbar is always visible):
+
+in index.html:
+	changed this tag <header class="s-header"> to <header class="s-header sticky scrolling">
+	
+in main.js
+	changed the ssMoveHeader function to:
+	  /* move header
+	   * -------------------------------------------------- */
+	  const ssMoveHeader = function () {
+		const hdr = document.querySelector(".s-header");
+		const hero = document.querySelector("#intro");
+		let triggerHeight;
+
+		if (!(hdr && hero)) return;
+
+		setTimeout(function () {
+		  triggerHeight = 10;
+		}, 300);
+
+		window.addEventListener("scroll", function () {
+		  let loc = window.scrollY;
+
+		  if (loc > triggerHeight) {
+			hdr.classList.add("offset");
+			hdr.classList.add("sticky-color");
+		  } else {
+			hdr.classList.remove("offset");
+			hdr.classList.remove("sticky-color");
+		  }
+		});
+	  }; // end ssMoveHeader
+
+in styles.css
+	search for .s-header.sticky (using ctrl + f)
+		changed the value of .s-header.sticky
+		from:
+		.s-header.sticky {
+		  opacity: 0;
+		  visibility: hidden;
+		  background-color: var(--color-gray-19);
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		}
+		to:
+		.s-header.sticky {
+		  position: fixed;
+		  top: 0;
+		  left: 0;
+		}
+	
+	after changing the styles above in .s-header.sticky
+		add this below it:
+			.s-header.sticky-color {
+			  background-color: var(--color-gray-19);
+			}
+
+general:
+	added the missing </div> closing tag above </body>
+
+	added these comments as well at the bottom of styles.css
+	/* ===================================================================
+	 * # NEW STYLES ARE ADDED HERE 
+	 *
+	 *
+	 * ------------------------------------------------------------------- */
+
+	/* ------------------------------------------------------------------- 
+	 * ## INTRO
+	 * ------------------------------------------------------------------- */
+	
+	added these "link" container comments to places where we'll need to add custom elements  or modify them(so we can easily find them via ctrl + f)
+	 <!-- links-container -->
+	 <!-- projects-container -->
+	 <!-- modals-container -->
+		

@@ -1,0 +1,20 @@
+/* ------------------------------------------------------------------- 
+ * ## SKILLS-HIGHLIGHT sample
+ * ------------------------------------------------------------------- */
+ These are the technologies that enabled me to turn my ideas into reality.
+
+
+
+/* ------------------------------------------------------------------- 
+ * ## ABOUT-INFO sample
+ * ------------------------------------------------------------------- */
+ 
+I am your-name-here. I enjoy developing in the .NET
+ecosystem, working on both front-end and back-end. I am always striving to learn and develop new skills and become a better software engineer.
+
+My main experience is in desktop application development and front-end web development. However, I also love creating simple yet artistic UI designs.
+
+/////////////////////
+/////////////////////
+add this span tag to the words you want to highlight (example):
+<span class="accent-highlight">your-awesome-skill</span>

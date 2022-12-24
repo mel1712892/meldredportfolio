@@ -1,0 +1,195 @@
+/* ===================================================================
+ * # NEW STYLES ARE ADDED HERE 
+ *
+ *
+ * ------------------------------------------------------------------- */
+
+/* ------------------------------------------------------------------- 
+ * ## NAVIGATION
+ * ------------------------------------------------------------------- */
+.s-header__social a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.s-header__social img {
+  height: 20px;
+  margin: 0;
+}
+
+.s-header__social span {
+  font-family: var(--font-2);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: var(--vspace-1);
+  padding: 0 0.8rem;
+  transition-property: color, background-color;
+}
+
+.s-header__social span {
+  color: #fff;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## INTRO
+ * ------------------------------------------------------------------- */
+.s-intro__content-title span {
+  letter-spacing: 0.0001rem;
+  font-family: var(--font-1);
+  font-size: calc(var(--text-size) * 1.1111);
+  font-weight: 300;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* ------------------------------------------------------------------- 
+ * ## SKILLS
+ * ------------------------------------------------------------------- */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8em;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #e0dfde;
+  color: #161616;
+  padding: 0.25em 1.2em;
+  border-radius: 10px;
+}
+
+.badge img {
+  height: 25px;
+  padding-right: 8px;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## Projects
+ * ------------------------------------------------------------------- */
+.project-links {
+  display: inline-flex;
+  position: absolute;
+  top: var(--vspace-1);
+  left: var(--vspace-1);
+}
+
+.project-link-btn {
+  background-color: #e96d34;
+  font-size: var(--text-xs);
+  line-height: var(--vspace-1_25);
+  color: #fff;
+  padding: 0 1.2rem;
+  border-radius: 8px;
+  margin-left: 10px;
+  border: 1px solid #fff;
+  box-shadow: 5px 5px 4px black;
+}
+
+.project-link-btn:focus,
+.project-link-btn:hover {
+  background-color: #e74e06;
+  color: #f8ecec;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## ABOUT
+ * ------------------------------------------------------------------- */
+.s-about .accent-highlight {
+  color: #f26522;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.s-about img {
+  border-radius: 10px;
+}
+
+.about-info p {
+  font-family: var(--font-1);
+  font-size: calc(var(--text-size) * 1.1111);
+  font-weight: 300;
+  line-height: 1.8;
+  color: var(--color-text-light);
+}
+
+@media (min-width: 600px) {
+  .about-info {
+    align-items: center;
+  }
+
+  .s-about img {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 700px) {
+  .s-about img {
+    max-width: 70%;
+  }
+}
+
+@media (min-width: 900px) {
+  .about-info {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .s-about img {
+    max-width: 40%;
+  }
+
+  .about-info p {
+    max-width: 58%;
+  }
+}
+
+@media (min-width: 900px) {
+  .s-about .section-header {
+    margin-bottom: var(--vspace-1);
+  }
+}
+
+/* ------------------------------------------------------------------- 
+ * ## CONTACT 
+ * ------------------------------------------------------------------- */
+.s-footer__social a {
+  display: inline-flex;
+  align-items: center;
+}
+
+.s-footer__social img {
+  height: 20px;
+  margin: 0;
+}
+
+.s-footer__social span {
+  font-family: var(--font-2);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: var(--vspace-1);
+  padding: 0 0.8rem;
+  transition-property: color, background-color;
+}
+
+.s-footer__social span {
+  color: #161616;
+}
+
+.s-footer__btns {
+  margin-top: 0;
+}
+
+.s-footer {
+  padding-top: calc(3.3 * var(--space));
+}
+
+.s-footer .title {
+  word-wrap: break-word;
+}
